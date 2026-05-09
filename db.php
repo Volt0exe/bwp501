@@ -3,11 +3,11 @@
 // db.php - ملف الاتصال بقاعدة البيانات
 // ============================================================
 
-$host = getenv('MYSQLHOST');
-$port = getenv('MYSQLPORT');
-$user = getenv('MYSQLUSER');
-$pass = getenv('MYSQLPASSWORD');
-$db   = getenv('MYSQLDATABASE');
+$host = getenv('mysql.railway.internal');
+$port = getenv('3306    ');
+$user = getenv('root');
+$pass = getenv('UhJsLLrOGFBGpQhlbJydGQOWIbkOQfpj');
+$db   = getenv('railway');
 
 $conn = new mysqli($host, $user, $pass, $db, $port);
 
